@@ -1,45 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./assets/logo.svg" alt="Logo" />
+      <button class="header__button button-1">Free Consultation</button>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__heading">Design solutions made easy</h1>
+        <p class="hero__para">
+          With over ten years of experience in various design disciplines,
+          I&apos;m your one-stop shop for your design needs.
+        </p>
+        <div class="hero__cards">
+          <div class="hero__card" id="graphic-design">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-graphic-design.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">Graphic Design</p>
+          </div>
+          <div class="hero__card" id="ui-ux">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-ui-ux.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">UI/UX</p>
+          </div>
+          <div class="hero__card" id="apps">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-apps.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">Apps</p>
+          </div>
+          <div class="hero__card" id="photography">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-photography.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">Photography</p>
+          </div>
+          <div class="hero__card" id="Illustrations">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-illustrations.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">Illustrations</p>
+          </div>
+          <div class="hero__card" id="motion-graphics">
+            <img
+              class="hero__card__image"
+              src="./assets/pattern-motion-graphics.svg"
+              alt="Illustration"
+            />
+            <p class="hero__card__text">Motion Graphics</p>
+          </div>
+        </div>
+      </section>
+      <div class="amy">
+        <img src="./assets/image-amy.webp" width="20px" alt="Amy" />
+        <div class="amy__content">
+          <h2 class="amy__heading">
+            I&apos;m Amy, and I&apos;d love to work on your next project
+          </h2>
+          <p class="amy__para">
+            I love working with others to create beautiful design solutions.
+            I&apos;ve designed everything from brand illustrations to complete
+            mobile apps. I&apos;m also handy with a camera!
+          </p>
+          <button class="amy__button button-2">Free Consultation</button>
+        </div>
+      </div>
+      <div class="work">
+        <p class="work__heading">My Work</p>
+        <!-- Carousel -->
+      </div>
+      <div class="booking">
+        <h2 class="booking__heading">Book a call with me</h2>
+        <p class="booking__para">
+          I&apos;d love to have a chat to see how I can help you. The best first
+          step is for us to discuss your project during a free consultation.
+          Then we can move forward from there.
+        </p>
+        <button class="booking__button button-2">Free Consultation</button>
+      </div>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page design portfolio</title>
-</head>
-<body>
-
-  Free Consultation
-
-  Design solutions made easy
-
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
-
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
-
-  I’m Amy, and I’d love to work on your next project
-
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
-
-  Free Consultation
-
-  My Work
-
-  Book a call with me
-
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
-
-  Free Consultation
-
-  Free Consultation
-
-</body>
+    <footer class="footer">
+      <img class="logo" src="./assets/logo.svg" alt="Logo" />
+      <button class="footer__button button-1">Free Consultation</button>
+    </footer>
+  </body>
 </html>

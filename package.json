@@ -1,0 +1,15 @@
+{
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single-page design portfolio coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass ./styles/styles.scss ./styles/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.59.3"
+  }
+}

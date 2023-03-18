@@ -1,0 +1,26 @@
+@use "../utils/" as u;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: u.rem(16);
+  padding-inline: u.rem(16);
+
+  @include u.breakpoint(medium) {
+    padding-block-start: u.rem(34);
+    padding-inline: u.rem(39);
+  }
+
+  @include u.breakpoint(xlarge) {
+    padding-inline: u.rem(165);
+  }
+
+  .logo {
+    width: u.rem(48);
+
+    @include u.breakpoint(medium) {
+      width: u.rem(64);
+    }
+  }
+}

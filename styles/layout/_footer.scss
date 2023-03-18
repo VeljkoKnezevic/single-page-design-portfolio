@@ -1,0 +1,13 @@
+@use "../utils/" as u;
+
+.footer {
+  padding-inline: u.rem(16);
+
+  @include u.breakpoint(medium) {
+    padding-inline: u.rem(39);
+  }
+
+  @include u.breakpoint(xlarge) {
+    padding-inline: u.rem(165);
+  }
+}
