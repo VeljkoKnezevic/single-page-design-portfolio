@@ -1,1 +1,74 @@
 @use "../utils/" as u;
+
+.amy {
+  padding-block-start: u.rem(100);
+
+  @include u.breakpoint(medium) {
+    padding-block-start: u.rem(120);
+    display: flex;
+  }
+
+  @include u.breakpoint(xlarge) {
+    padding-block-start: u.rem(136);
+  }
+
+  &__image {
+    display: block;
+    width: u.rem(300);
+    height: u.rem(300);
+
+    margin-inline: auto;
+
+    @include u.breakpoint(medium) {
+      width: u.rem(364);
+      height: u.rem(364);
+      margin-inline-start: u.rem(-44 - 39);
+    }
+
+    @include u.breakpoint(xlarge) {
+      width: u.rem(445);
+      height: u.rem(445);
+      margin-inline-start: 0;
+    }
+  }
+
+  &__content {
+    margin-block-start: u.rem(40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include u.breakpoint(medium) {
+      text-align: start;
+      align-items: start;
+      margin-inline-start: u.rem(69);
+      margin-block-start: 0;
+    }
+
+    @include u.breakpoint(xlarge) {
+      margin-inline-start: u.rem(125);
+    }
+  }
+
+  &__heading {
+    color: var(--black);
+  }
+
+  &__para {
+    margin-block-start: u.rem(24);
+    color: var(--medium-brown);
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: u.rem(34);
+    }
+  }
+
+  &__button {
+    margin-block-start: u.rem(24);
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: u.rem(32);
+    }
+  }
+}

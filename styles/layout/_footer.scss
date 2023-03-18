@@ -1,13 +1,26 @@
 @use "../utils/" as u;
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: u.rem(40);
   padding-inline: u.rem(16);
 
   @include u.breakpoint(medium) {
     padding-inline: u.rem(39);
+    padding-block-start: u.rem(56);
   }
 
   @include u.breakpoint(xlarge) {
     padding-inline: u.rem(165);
+  }
+
+  .logo {
+    width: u.rem(48);
+
+    @include u.breakpoint(medium) {
+      width: u.rem(64);
+    }
   }
 }

@@ -1,1 +1,53 @@
 @use "../utils/" as u;
+
+.booking {
+  background: var(--black);
+  border-radius: u.rem(10);
+  padding: u.rem(49) u.rem(24);
+  text-align: center;
+  margin-block-start: u.rem(100);
+  position: relative;
+
+  @include u.breakpoint(medium) {
+    padding: u.rem(56) u.rem(75) u.rem(64);
+  }
+
+  @include u.breakpoint(xlarge) {
+    padding: u.rem(81) u.rem(95) u.rem(80) u.rem(65);
+    text-align: start;
+    max-width: u.rem(1210);
+    margin-inline: auto;
+  }
+
+  &__heading {
+    color: var(--light-cream);
+  }
+
+  &__para {
+    color: var(--light-cream);
+    margin-block-start: u.rem(24);
+    @include u.breakpoint(medium) {
+      margin-block-start: u.rem(26);
+    }
+
+    @include u.breakpoint(xlarge) {
+      max-width: u.rem(540);
+      margin-block-start: u.rem(25);
+    }
+  }
+
+  &__button {
+    margin-block-start: u.rem(24);
+
+    @include u.breakpoint(medium) {
+      margin-block-start: u.rem(26);
+    }
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: 0;
+      position: absolute;
+      right: u.rem(95);
+      top: u.rem(132);
+    }
+  }
+}
