@@ -3,7 +3,7 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   grabCursor: true,
-  initialSlide: 1,
+  initialSlide: 2,
   spaceBetween: 15,
   breakpoints: {
     768: {
