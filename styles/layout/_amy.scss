@@ -48,6 +48,7 @@
 
     @include u.breakpoint(xlarge) {
       margin-inline-start: u.rem(125);
+      padding-block-start: u.rem(70);
     }
   }
 

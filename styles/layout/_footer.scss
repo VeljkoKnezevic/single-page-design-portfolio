@@ -6,14 +6,16 @@
   justify-content: space-between;
   padding-block-start: u.rem(40);
   padding-inline: u.rem(16);
+  padding-block-end: u.rem(32);
 
   @include u.breakpoint(medium) {
     padding-inline: u.rem(39);
-    padding-block-start: u.rem(56);
+    padding-block: u.rem(56);
   }
 
   @include u.breakpoint(xlarge) {
     padding-inline: u.rem(165);
+    padding-block-end: u.rem(64);
   }
 
   .logo {

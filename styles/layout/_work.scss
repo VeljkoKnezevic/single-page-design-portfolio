@@ -1,1 +1,69 @@
 @use "../utils/" as u;
+
+.work {
+  margin-block-start: u.rem(100);
+
+  @include u.breakpoint(medium) {
+    margin-block-start: u.rem(120);
+  }
+
+  @include u.breakpoint(medium) {
+    margin-block-start: u.rem(88);
+  }
+
+  &__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: u.rem(24);
+    line-height: u.rem(30);
+    text-align: center;
+    color: var(--black);
+
+    @include u.breakpoint(medium) {
+      font-size: u.rem(32);
+      line-height: u.rem(40);
+    }
+  }
+
+  .swiper {
+    &-wrapper {
+      margin-block-start: u.rem(32);
+
+      @include u.breakpoint(medium) {
+        margin-block-start: u.rem(56);
+      }
+    }
+    &-slide {
+      max-width: 70%;
+
+      @include u.breakpoint(medium) {
+        max-width: u.rem(544);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: u.rem(10);
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: u.rem(16);
+    margin-block-start: u.rem(32);
+
+    &__button {
+      background: var(--black);
+      padding: u.rem(24);
+      border-radius: 50%;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--galactic-blue);
+      }
+    }
+  }
+}

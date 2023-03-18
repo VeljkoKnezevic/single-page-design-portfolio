@@ -16,6 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./app.js" type="module" defer></script>
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
   <body>
@@ -97,7 +107,39 @@
       </div>
       <div class="work">
         <p class="work__heading">My Work</p>
-        <!-- Carousel -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <button
+            class="navigation__button navigation__button--prev"
+            data-type="primary"
+          >
+            <img src="./assets/icon-arrow-left.svg" />
+          </button>
+          <button
+            class="navigation__button navigation__button--next"
+            data-type="primary"
+          >
+            <img src="./assets/icon-arrow-right.svg" alt="" />
+          </button>
+        </div>
       </div>
       <div class="booking">
         <h2 class="booking__heading">Book a call with me</h2>
